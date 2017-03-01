@@ -1,13 +1,19 @@
 /******************************************************************************\ 
 * Name: generatedata.sas
 * 
-* Purpose: Generate two datasets to be fed into lefthash.sas, righthash.sas
-           fulljoinhash.sas
+* Purpose: Generate two datasets to be fed into: 
+*          -lefthash.sas
+*          -righthash.sas
+*          -fulljoinhash.sas
+*	   -SQLleftjoin.sas
+*	   -SQLrightjoin.sas
+*	   -SQLfulljoin.sas
 * 
 * Author: Jesse Behrens
 * 
 * History: 
 * 02/28/2017 Initial creation of code
+* 03/01/2017 Update the comments
 \******************************************************************************/
 
 %let NObsleft=100000;
