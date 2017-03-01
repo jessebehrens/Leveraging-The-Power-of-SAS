@@ -1,8 +1,8 @@
 /******************************************************************************\ 
 * Name: generatedata.sas
 * 
-* Purpose: Generate two datasets to be fed into lefthash.sas for merging with a
-           hash table
+* Purpose: Generate two datasets to be fed into lefthash.sas, righthash.sas
+           fulljoinhash.sas
 * 
 * Author: Jesse Behrens
 * 
