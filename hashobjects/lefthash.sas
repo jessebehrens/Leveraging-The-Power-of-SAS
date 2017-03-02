@@ -22,11 +22,12 @@ DATA work.OutputTableHash;
 */
   set work.lefttable (drop=VarF VarG VarH VarI);
 
-/* this initializes the variables we want to merge inin the program data vector 
-   for dataset right table.  All variables that are being merged in must be 
-   declared first.  I personally like to use the length statement, but other 
-   methods work
+/*This populates variables into our program data vector that exist in the
+  dataset 'righttable.'  All variables that are being merged in must be 
+  declared first.  I personally like to use the length statement, but other 
+  methods work
 */
+
 
   length KeyR $5. VarJ VarN VarP VarR 8.;
 
