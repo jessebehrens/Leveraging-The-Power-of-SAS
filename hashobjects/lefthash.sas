@@ -14,7 +14,7 @@
              newly formed variables were not initialized. 
 \******************************************************************************/
 
-/*Table to be left joined into*/ /*call missing(gender, treatment); */
+/*Output table name*/ 
 DATA work.OutputTableHash; 
 
 /*Load the table to be left joined into by the right table
