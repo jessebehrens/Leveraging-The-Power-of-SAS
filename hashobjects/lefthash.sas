@@ -33,7 +33,7 @@ DATA work.OutputTableHash;
 
 /*Now we will declare the hash object.  We need to define the key to match on, the data
   to be brough in. Since hash objects are put into memory, I only load the variables
-  needed for the merge using the drop statement.
+  needed for the merge using the keep statement.
   The _N_ makes sure the table is only loaded into memory once 
 */
 
@@ -49,7 +49,7 @@ DATA work.OutputTableHash;
   IF ^h.check(key:KeyL) then h.find(Key:KeyL);
   output;
 
-/*Hash tables look for only one match, even with multidata option set to 'y'.  We will
+/*Hash tables look for only one match even with multidata option set to 'y'.  We will
   need to implement a DO loop to find the rest of the matches.  We will use the has_next()
   function to find additional matches, if they exist.
 */
