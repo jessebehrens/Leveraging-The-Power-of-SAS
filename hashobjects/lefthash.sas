@@ -10,6 +10,8 @@
 *
 * History: 
 * 02/28/2017 Initial creation of code
+* 03/02/2017 Added call missing to the code to remove the warning that the
+             newly formed variables were not initialized. 
 \******************************************************************************/
 
 /*Table to be left joined into*/ /*call missing(gender, treatment); */
@@ -39,6 +41,7 @@ DATA work.OutputTableHash;
     h.defineKey('KeyR');
     h.defineData('VarJ','VarN','VarP','VarR', 'KeyR');
     h.defineDone();
+    call missing(KeyR, VarJ, VarN, VarP, VarR);
   END;
 
 /*Let's look to see if there are any key matches using the find and check functions*/
