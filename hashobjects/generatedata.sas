@@ -3,10 +3,10 @@
 * 
 * Purpose: Generate two datasets to be fed into: 
 *          -lefthash.sas
-*          -righthash.sas
+*          -innerhash.sas
 *          -fulljoinhash.sas
 *	   -SQLleftjoin.sas
-*	   -SQLrightjoin.sas
+*	   -SQLinnerjoin.sas
 *	   -SQLfulljoin.sas
 * 
 * Author: Jesse Behrens
