@@ -1,7 +1,7 @@
 /******************************************************************************\ 
 * Name: lefthash.sas
 * 
-* Purpose: Create a left join using hash objects in SAS.  Use SQLleftjoin.sas
+* Purpose: Create a left join using a hash object in SAS.  Use SQLleftjoin.sas
 *          to compare results.  The only difference will be order.
 * 
 * Author: Jesse Behrens
