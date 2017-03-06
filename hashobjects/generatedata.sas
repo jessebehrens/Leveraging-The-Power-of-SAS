@@ -17,8 +17,8 @@
 * 03/02/2017 Reducing the number Obs
 \******************************************************************************/
 
-%let NObsleft=10000;
-%let NObsright=5000;
+%let NObsleft=100000;
+%let NObsright=50000;
 
 /*Create a table called lefttable that containts a key and variables with random
   values A-I*/
