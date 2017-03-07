@@ -5,9 +5,12 @@
 *          -lefthash.sas
 *          -innerhash.sas
 *          -fulljoinhash.sas
+*          -DS2lefthash.sas
+*          -DS2innerhash.sas
+*          -DS2fullhash.sas
 *	   -SQLleftjoin.sas
 *	   -SQLinnerjoin.sas
-*	   -SQLfulljoin.sas
+*	   -SQLfulljoin.sas         
 * 
 * Author: Jesse Behrens
 * 
