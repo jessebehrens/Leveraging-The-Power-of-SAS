@@ -14,7 +14,7 @@
 \******************************************************************************/
 
 PROC SQL noprint;
-  create table OutputTableSQL as
+  create table OutputInnerSQL as
   select a.KeyL, a.VarA, a.VarB, a.VarC, a.VarD,a.VarE,b.KeyR,
          b.VarJ,b.VarN,b.VarP, b.VarR
   from lefttable a inner join righttable b on a.KeyL=b.KeyR;
