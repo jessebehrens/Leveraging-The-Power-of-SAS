@@ -31,7 +31,7 @@ PROC DS2;
 */
     method init();
       h.keys([KeyR]);
-	  h.data([VarJ VarN VarP VarR KeyR]);
+      h.data([VarJ VarN VarP VarR KeyR]);
       h.dataset('{select * from work.righttable {options locktable=share}}');
       h.multidata();
       h.defineDone();
@@ -40,34 +40,34 @@ PROC DS2;
 /*Load work.lefttable.  The set statement uses FedSQL to select the variables
   we went to keep from work.lefttable
 */
-	method run();
+    method run();
       set {select KeyL, VarA, VarB, VarC, VarD, VarE from work.lefttable};
 /*Find the first match to the key and output*/
 
-	  IF h.find([KeyL],[VarJ VarN VarP VarR KeyR])=0 then do;
-	    output;
+      IF h.find([KeyL],[VarJ VarN VarP VarR KeyR])=0 then do;
+        output;
 
 /*If there was an initial match, use a DO loop to look for more and output them
   as well*/
 
         DO while (h.has_next()=0);
-		  h.find_next();
-		  output;
-		END;
-	  END;
+          h.find_next();
+          output;
+        END;
+      END;
 
 
-	end;
+    end;
   endthread;
 
 /*Call the threaded code, InnerHashDS2.  This will execute across 12 threads and
   create an output dataset called OutputInnerHashDS2
 */
   DATA work.OutputInnerHashDS2 / overwrite=yes;
-		declare thread InnerHASHDS2 InnerHASHDS2_instance;
-		method run();
-			set from InnerHASHDS2_instance threads=12;
-		end;
+    declare thread InnerHASHDS2 InnerHASHDS2_instance;
+    method run();
+      set from InnerHASHDS2_instance threads=12;
+    end;
   ENDDATA;
 RUN;
 QUIT;
