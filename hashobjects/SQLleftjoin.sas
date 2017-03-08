@@ -15,7 +15,7 @@
 \******************************************************************************/
 
 PROC SQL noprint;
-  create table OutputTableSQL as
+  create table OutputLeftSQL as
   select lt.KeyL, lt.VarA, lt.VarB, lt.VarC, lt.VarD,lt.VarE,
          rt.KeyR, rt.VarJ,rt.VarN,rt.VarP, rt.VarR
   from lefttable as lt left join righttable as rt on lt.KeyL=rt.KeyR;
