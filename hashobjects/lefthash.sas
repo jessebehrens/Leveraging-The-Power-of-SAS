@@ -15,7 +15,7 @@
 \******************************************************************************/
 
 /*Output table name*/ 
-DATA work.OutputTableHash; 
+DATA work.OutputleftHash; 
 
 /*Load the table to be left joined into by the right table
   Keep only the variables needed from the 'left table'
