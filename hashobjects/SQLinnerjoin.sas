@@ -8,6 +8,7 @@
 * Author: Jesse Behrens
 * 
 * Input: work.lefttable & work.righttable from generatedata.sas
+* Output: work.OutputInnerSQL
 *
 * History: 
 * 03/02/2017 Initial creation of code
