@@ -14,6 +14,8 @@
 * 
 * Author: Jesse Behrens
 * 
+* Output: work.lefttable and work.righttable
+*
 * History: 
 * 02/28/2017 Initial creation of code
 * 03/01/2017 Update the comments
