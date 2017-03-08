@@ -66,10 +66,10 @@ PROC DS2;
   create an output dataset called OutputLeftHashDS2
 */
   DATA work.OutputLeftHashDS2 / overwrite=yes;
-		declare thread LeftHASHDS2 LeftHASHDS2_instance;
-		method run();
-			set from LeftHASHDS2_instance threads=12;
-		end;
+    declare thread LeftHASHDS2 LeftHASHDS2_instance;
+    method run();
+      set from LeftHASHDS2_instance threads=12;
+    end;
   ENDDATA;
 RUN;
 QUIT;
