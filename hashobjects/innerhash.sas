@@ -13,7 +13,7 @@
 \******************************************************************************/
 
 /*Output table name*/
-DATA work.OutputTableHash; 
+DATA work.OutputInnerHash; 
 
 /*'Left table' in our innerjoin
   Keep only the variables needed from the 'left table'
