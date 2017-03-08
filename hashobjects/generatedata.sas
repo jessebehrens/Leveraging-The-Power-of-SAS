@@ -64,8 +64,8 @@ DATA righttable;
     ELSE KeyR='';
 
     VarJ=rand('uniform');
-	VarK=rand('uniform');
-	VarL=rand('uniform');
+    VarK=rand('uniform');
+    VarL=rand('uniform');
     VarM=rand('uniform');
     VarN=rand('uniform');
     VarO=rand('uniform');
