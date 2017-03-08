@@ -41,7 +41,7 @@ DATA work.OutputInnerHash;
     h.defineKey('KeyR');
     h.defineData('VarJ','VarN','VarP','VarR', 'KeyR');
     h.defineDone();
-	call missing(KeyR, VarJ, VarN, VarP, VarR); 
+    call missing(KeyR, VarJ, VarN, VarP, VarR); 
   END;
 
 /*Let's look to see if there are any key matches using the find and check functions*/
@@ -63,7 +63,7 @@ DATA work.OutputInnerHash;
 
   DO while (r ne 0);
     IF h.find_next(key:KeyL)=0 then output;
-	h.has_next(result:r);
+    h.has_next(result:r);
   END;
 
   drop r;
