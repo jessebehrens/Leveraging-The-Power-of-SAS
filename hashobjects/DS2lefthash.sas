@@ -8,6 +8,7 @@
 * Author: Jesse Behrens
 * 
 * Input: work.lefttable & work.righttable from generatedata.sas
+* Output: work.OutputLeftHashDS2
 *
 * History: 
 * 03/08/2017 Initial creationg of code 
