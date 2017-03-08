@@ -63,7 +63,7 @@ DATA work.OutputleftHash;
 
   DO while (r ne 0);
     IF h.find_next(key:KeyL)=0 then output;
-	h.has_next(result:r);
+    h.has_next(result:r);
   END;
 
   drop r;
