@@ -1,7 +1,7 @@
 /******************************************************************************\ 
 * Name: DS2lefthash.sas
 * 
-* Purpose: Create a left join using a hash object in SAS with PROC DS@.  Use 
+* Purpose: Create a left join using a hash object in SAS with PROC DS2.  Use 
 *          SQLleftjoin.sas to compare results.  The only difference will 
 *          be order.
 * 
@@ -32,7 +32,8 @@ PROC DS2;
     method init();
       h.keys([KeyR]);
       h.data([VarJ VarN VarP VarR KeyR]);
-      h.dataset('{select * from work.righttable {options locktable=share}}');
+      h.dataset('{select VarJ, VarN, VarP, VarR, KeyR 
+                  from work.righttable {options locktable=share}}');
       h.multidata();
       h.defineDone();
     end;
