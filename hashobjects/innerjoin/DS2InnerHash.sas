@@ -32,7 +32,8 @@ PROC DS2;
     method init();
       h.keys([KeyR]);
       h.data([VarJ VarN VarP VarR KeyR]);
-      h.dataset('{select * from work.righttable {options locktable=share}}');
+      h.dataset('{select VarJ, VarN, VarP, VarR, KeyR 
+                  from work.righttable {options locktable=share}}');
       h.multidata();
       h.defineDone();
     end;
