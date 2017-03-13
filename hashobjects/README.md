@@ -1,6 +1,6 @@
 ## Overview
 
-The code in the hashobjects folder is meant to show SAS users an efficient way to join two datasets together outside of the data step match-merge and SQL join.  
+The code in the sub folders of the hashobjects folder is meant to show SAS users an efficient way to join two datasets together outside of the data step match-merge and SQL join.  Each subfolder contains different methods for executing different join and merge types.
    
 Data step and DS2 hash objects offer two distinct advantages:    
    1) They eliminate the need for preprocessing the data with indexes and sorts.     
