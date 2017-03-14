@@ -1,7 +1,7 @@
 ## Overview
 The code in this repository shows different ways to produce a full join between two datasets.  A full join returns rows between the two tables that satisfy the join condition in addition to any unmatched rows from either table.  There are three pieces of code in this repository:</br>  
 1) <b>Generatedata.sas</b>: Simulates data  for SQLfulljoin.sas and fulljoinhash.sas  </br>
-2) <b>fulljoinhash.sas</b>: Uses hash objects within the SAS data step to perform a full join.  Programmatically, the full join is vastly different than inner and left join since program has to track the rows which existed in the right table but did not exist in the left table, and vice versa. This will result in loading the ‘right’ table into memory twice.</br>
+2) <b>fulljoinhash.sas</b>: Uses hash objects within the SAS data step to perform a full join.  Programmatically, the full join is vastly different than inner and left join since the program keeps track of the keys which existed in the right table but did not exist in the left table, and vice versa.</br>
 3) <b>SQLfulljoin.sas</b>:  Performs a full join using PROC SQL.
 <b>My recommendation</b> is to try the hash method on your data.  I believe in most cases you will see <b>great</b> improvements over any other type of join available in SAS.  
 ## What about PROC DS2 and full joins using hash objects?
