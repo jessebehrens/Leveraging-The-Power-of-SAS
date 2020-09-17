@@ -15,3 +15,5 @@ For more information on SAS hash objects, please see this <a href='https://suppo
 PROC DS2 is an advance data manipulation tool in SAS.  In its most basic form, PROC DS2 is able to maniluplate data across multiple cores on a single SAS machine; the data step manipulates data across a single core.  However, for each core we use in our PROC DS2, we must create an additional copy of the hash object in memory.  However, the trade off in time efficency may be worth the cost in additional resources for your particular case.  
 
 You can read more about PROC DS2 <a href='https://support.sas.com/documentation/cdl/en/ds2ref/69739/HTML/default/viewer.htm'>here</a>.
+
+<b>Final Note</b>:  These methods have been tested against SAS9.4 and not the CAS engine found in SAS Viya.  I will deliver and example shortly, but please feel free to contact me in the meantime.
