@@ -16,4 +16,4 @@ PROC DS2 is an advance data manipulation tool in SAS.  In its most basic form, P
 
 You can read more about PROC DS2 <a href='https://support.sas.com/documentation/cdl/en/ds2ref/69739/HTML/default/viewer.htm'>here</a>.
 
-<b>Final Note</b>:  These methods have been tested against SAS9.4 and not the CAS engine found in SAS Viya.  I will deliver and example shortly, but please feel free to contact me in the meantime.
+<b>Final Note</b>:  These methods have been tested against SAS9.4 and not SAS Viya's CAS engine.  I will deliver and example shortly, but please feel free to contact me in the meantime.
